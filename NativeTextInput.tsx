@@ -45,8 +45,8 @@ export const NativeTextInput: React.FC<CustomTextInputProps> = ({
     'Does the %s work?\n',
     NativeTextInputComponent,
     NativeTextInputComponent
-      ? 'Using native NativeTextInput component'
-      : 'Falling back to regular TextInput',
+      ? 'Yes!\tUsing native NativeTextInput component'
+      : 'No!\tFalling back to regular TextInput',
   );
 
   // Try to use native component first, fallback to regular TextInput if not available
