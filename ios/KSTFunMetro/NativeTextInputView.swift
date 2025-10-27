@@ -3,7 +3,7 @@ import React
 
 class NativeTextInputView: UIView {
   private var textField: UITextField!
-  private var onChangeText: RCTDirectEventBlock?
+  @objc var onChangeText: RCTDirectEventBlock?
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -40,31 +40,30 @@ class NativeTextInputView: UIView {
       textField.topAnchor.constraint(equalTo: topAnchor),
       textField.leadingAnchor.constraint(equalTo: leadingAnchor),
       textField.trailingAnchor.constraint(equalTo: trailingAnchor),
-      textField.bottomAnchor.constraint(equalTo: bottomAnchor),
-      textField.heightAnchor.constraint(equalToConstant: 40)
+      textField.bottomAnchor.constraint(equalTo: bottomAnchor)
     ])
   }
   
   @objc private func textFieldDidChange() {
-    // Send change event to React Native
-    if let onChangeText = onChangeText {
-      onChangeText(["text": textField.text ?? ""])
+    guard let onChangeText = onChangeText else { return }
+    onChangeText(["text": textField.text ?? ""])
+  }
+  
+  @objc var value: String = "" {
+    didSet {
+      textField.text = value
     }
   }
   
-  @objc func setValue(_ value: String) {
-    textField.text = value
+  @objc var placeholder: String = "" {
+    didSet {
+      textField.placeholder = placeholder
+    }
   }
   
-  @objc func setPlaceholder(_ placeholder: String) {
-    textField.placeholder = placeholder
-  }
-  
-  @objc func setSecureTextEntry(_ secure: Bool) {
-    textField.isSecureTextEntry = secure
-  }
-  
-  @objc func setOnChangeText(_ onChangeText: @escaping RCTDirectEventBlock) {
-    self.onChangeText = onChangeText
+  @objc var secureTextEntry: Bool = false {
+    didSet {
+      textField.isSecureTextEntry = secureTextEntry
+    }
   }
 }

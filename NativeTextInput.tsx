@@ -4,7 +4,6 @@ import {
   ViewStyle,
   NativeSyntheticEvent,
   TextInput,
-  Platform,
 } from 'react-native';
 
 interface NativeTextInputChangeEvent {
@@ -42,8 +41,16 @@ export const NativeTextInput: React.FC<CustomTextInputProps> = ({
   onChangeText,
   ...props
 }) => {
-  // Fallback to regular TextInput if native component is not available (especially on iOS)
-  if (!NativeTextInputComponent || Platform.OS === 'ios') {
+  console.log(
+    'Does the %s work?\n',
+    NativeTextInputComponent,
+    NativeTextInputComponent
+      ? 'Using native NativeTextInput component'
+      : 'Falling back to regular TextInput',
+  );
+
+  // Try to use native component first, fallback to regular TextInput if not available
+  if (!NativeTextInputComponent) {
     return (
       <TextInput
         {...props}

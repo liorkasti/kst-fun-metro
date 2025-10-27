@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-KSTFunMetro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-KSTFunMetro.a */; };
+		0D8DAB4CD9A4AD65E52B294A /* NativeTextInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6510680771E2266B3954CC /* NativeTextInputManager.m */; };
+		0DE1349F16BBE652D8690FB1 /* NativeTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		504EA40EB41A1B11F14C310A /* NativeTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		EEF69457499F91B6BEF9BF04 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
@@ -22,9 +25,12 @@
 		3B4392A12AC88292D35C810B /* Pods-KSTFunMetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSTFunMetro.debug.xcconfig"; path = "Target Support Files/Pods-KSTFunMetro/Pods-KSTFunMetro.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-KSTFunMetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSTFunMetro.release.xcconfig"; path = "Target Support Files/Pods-KSTFunMetro/Pods-KSTFunMetro.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-KSTFunMetro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KSTFunMetro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTextInputManager.swift; path = KSTFunMetro/NativeTextInputManager.swift; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = KSTFunMetro/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = KSTFunMetro/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTextInputView.swift; path = KSTFunMetro/NativeTextInputView.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FC6510680771E2266B3954CC /* NativeTextInputManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NativeTextInputManager.m; path = KSTFunMetro/NativeTextInputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */,
+				CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */,
+				FC6510680771E2266B3954CC /* NativeTextInputManager.m */,
 			);
 			name = KSTFunMetro;
 			sourceTree = "<group>";
@@ -247,6 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				504EA40EB41A1B11F14C310A /* NativeTextInputManager.swift in Sources */,
+				0DE1349F16BBE652D8690FB1 /* NativeTextInputView.swift in Sources */,
+				0D8DAB4CD9A4AD65E52B294A /* NativeTextInputManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
