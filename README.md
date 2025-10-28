@@ -1,4 +1,4 @@
-# KSTFunMetro - Native TextInput Component
+# KSTNativeComponent - Native TextInput Component
 
 🎯 **Project Goal**: Create a custom TextInput component that operates at the native platform level instead of the JavaScript layer, demonstrating cross-platform native UI component development with React Native.
 
@@ -11,8 +11,8 @@
 
 ```bash
 # Clone and setup
-git clone https://github.com/liorkasti/kst-fun-metro.git
-cd kst-fun-metro
+git clone https://github.com/liorkasti/kst-native-component.git
+cd kst-native-component
 npm install
 
 # iOS setup
@@ -24,9 +24,9 @@ npm run ios      # iOS
 ```
 
 **⚠️ iOS Note**: For full native component functionality, manually add Swift files to Xcode project:
-1. Open `ios/KSTFunMetro.xcworkspace`
+1. Open `ios/KSTNativeComponent.xcworkspace`
 2. Drag `NativeTextInputManager.swift`, `NativeTextInputView.swift`, `NativeTextInputManager.m` to project
-3. Ensure files are added to `KSTFunMetro` target
+3. Ensure files are added to `KSTNativeComponent` target
 
 ## 📋 Table of Contents
 
@@ -70,12 +70,12 @@ This project demonstrates a **Native UI Component** for React Native - a TextInp
 
 ### Project Structure
 ```
-📦 KSTFunMetro/
-├── 📱 ios/KSTFunMetro/
+📦 KSTNativeComponent/
+├── 📱 ios/KSTNativeComponent/
 │   ├── NativeTextInputManager.swift    # ViewManager
 │   ├── NativeTextInputView.swift       # UITextField Wrapper  
 │   └── NativeTextInputManager.m        # Objective-C Bridge
-├── 🤖 android/.../com/kstfunmetro/
+├── 🤖 android/.../com/kstnativecomponent/
 │   ├── NativeTextInputManager.kt       # ViewManager
 │   ├── NativeTextInputPackage.kt       # Registration
 │   └── NativeTextInputView.kt          # EditText Wrapper
@@ -239,7 +239,7 @@ export const NativeTextInput: React.FC<Props> = ({ onChangeText, ...props }) => 
 
 **Configuration Files:**
 - `android/gradle.properties`: `newArchEnabled=true` ✅
-- `ios/KSTFunMetro/Info.plist`: `RCTNewArchEnabled=true` ✅
+- `ios/KSTNativeComponent/Info.plist`: `RCTNewArchEnabled=true` ✅
 - Component Code: Legacy RCTViewManager (backward compatible) ✅
 
 ### iOS: RCTViewManager (Bridge-based)

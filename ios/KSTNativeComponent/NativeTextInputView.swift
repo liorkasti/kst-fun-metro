@@ -18,17 +18,15 @@ class NativeTextInputView: UIView {
   private func setupTextField() {
     textField = UITextField()
     textField.borderStyle = .none
-    textField.backgroundColor = UIColor.white
+    textField.backgroundColor = UIColor.clear  // Remove background
     textField.textColor = UIColor.black
-    textField.layer.borderWidth = 1
-    textField.layer.borderColor = UIColor.lightGray.cgColor
-    textField.layer.cornerRadius = 8
+    // Remove border styling - let React Native handle it
     textField.font = UIFont.systemFont(ofSize: 16)
     
-    // Add padding
-    textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+    // Add minimal padding only
+    textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
     textField.leftViewMode = .always
-    textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+    textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
     textField.rightViewMode = .always
     
     // Add native text change handling
