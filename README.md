@@ -265,7 +265,9 @@ export const NativeTextInput: React.FC<Props> = ({ onChangeText, ...props }) => 
 - **[UITextField Documentation](https://developer.apple.com/documentation/uikit/uitextfield)** - Apple's UITextField official documentation
 - **[EditText Documentation](https://developer.android.com/reference/android/widget/EditText)** - Android's EditText official documentation
 - **[Android UI Components](https://developer.android.com/guide/topics/ui/controls)** - Android UI controls guide
+- **[Android lifecycle methods](https://developer.android.com/guide/topics/ui/controls)** - Integration with an Android Fragment example
 - **[React Native Architecture Overview](https://reactnative.dev/docs/architecture-overview)** - Complete architecture documentation
 - **[Create a Fabric Native Component](https://github.com/reactwg/react-native-new-architecture/blob/main/docs/fabric-native-components.md)** - New Architecture Workflows documentation  
 - **[Fabric Renderer](https://reactnative.dev/docs/fabric-renderer)** - New UI layer documentation  
 - **[Create a Turbo Native Modules](https://github.com/reactwg/react-native-new-architecture/blob/main/docs/turbo-modules.md)** - New native modules system documentation
+- **[Support both New and Legacy Architecture](https://github.com/reactwg/react-native-new-architecture/blob/main/docs/backwards-compat.md)** - Backwards compatibility guide

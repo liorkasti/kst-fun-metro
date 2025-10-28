@@ -11,9 +11,12 @@
 		0D8DAB4CD9A4AD65E52B294A /* NativeTextInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6510680771E2266B3954CC /* NativeTextInputManager.m */; };
 		0DE1349F16BBE652D8690FB1 /* NativeTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2456698BA4E123360A284527 /* FabricNativeTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB1532FB6026140494582A6 /* FabricNativeTextInputView.swift */; };
 		504EA40EB41A1B11F14C310A /* NativeTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8C73CD8865B5FCC8461A53E7 /* FabricNativeTextInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D36BBD93AAFBAB37E4DD0357 /* FabricNativeTextInputManager.m */; };
+		9355C3678C3AC995E9B3166A /* FabricNativeTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860ED4AC2193E545EBE7DF4 /* FabricNativeTextInputManager.swift */; };
 		EEF69457499F91B6BEF9BF04 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +31,10 @@
 		6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTextInputManager.swift; path = KSTNativeComponent/NativeTextInputManager.swift; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = KSTNativeComponent/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = KSTNativeComponent/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8860ED4AC2193E545EBE7DF4 /* FabricNativeTextInputManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FabricNativeTextInputManager.swift; sourceTree = "<group>"; };
+		9CB1532FB6026140494582A6 /* FabricNativeTextInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FabricNativeTextInputView.swift; sourceTree = "<group>"; };
 		CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTextInputView.swift; path = KSTNativeComponent/NativeTextInputView.swift; sourceTree = "<group>"; };
+		D36BBD93AAFBAB37E4DD0357 /* FabricNativeTextInputManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FabricNativeTextInputManager.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FC6510680771E2266B3954CC /* NativeTextInputManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NativeTextInputManager.m; path = KSTNativeComponent/NativeTextInputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +62,9 @@
 				6F69BE43DB08F8646F13B7E3 /* NativeTextInputManager.swift */,
 				CB17025A91404453CB72B3D7 /* NativeTextInputView.swift */,
 				FC6510680771E2266B3954CC /* NativeTextInputManager.m */,
+				D36BBD93AAFBAB37E4DD0357 /* FabricNativeTextInputManager.m */,
+				8860ED4AC2193E545EBE7DF4 /* FabricNativeTextInputManager.swift */,
+				9CB1532FB6026140494582A6 /* FabricNativeTextInputView.swift */,
 			);
 			name = KSTNativeComponent;
 			sourceTree = "<group>";
@@ -259,6 +268,9 @@
 				504EA40EB41A1B11F14C310A /* NativeTextInputManager.swift in Sources */,
 				0DE1349F16BBE652D8690FB1 /* NativeTextInputView.swift in Sources */,
 				0D8DAB4CD9A4AD65E52B294A /* NativeTextInputManager.m in Sources */,
+				8C73CD8865B5FCC8461A53E7 /* FabricNativeTextInputManager.m in Sources */,
+				9355C3678C3AC995E9B3166A /* FabricNativeTextInputManager.swift in Sources */,
+				2456698BA4E123360A284527 /* FabricNativeTextInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

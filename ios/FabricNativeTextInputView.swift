@@ -1,7 +1,7 @@
 import UIKit
 import React
 
-class NativeTextInputView: UIView {
+class FabricNativeTextInputView: UIView {
   private var textField: UITextField!
   @objc var onChangeText: RCTDirectEventBlock?
   

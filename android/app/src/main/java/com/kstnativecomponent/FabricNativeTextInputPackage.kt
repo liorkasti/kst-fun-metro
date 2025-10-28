@@ -5,12 +5,16 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 
-class NativeTextInputPackage : ReactPackage {
+/**
+ * ✅ Fabric Package Registration
+ * Enhanced for New Architecture support
+ */
+class FabricNativeTextInputPackage : ReactPackage {
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
         return emptyList()
     }
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
-        return listOf(NativeTextInputManager())
+        return listOf(FabricNativeTextInputManager())
     }
 }
